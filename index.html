@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contage Contabilidade | Consultoria e Auditoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --azul-escuro: #0a192f; --dourado: #c5a059; --cinza-claro: #f4f4f4; --branco: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--cinza-claro); color: #333; line-height: 1.6; }
+
+        /* Navegação */
+        nav { background: var(--azul-escuro); padding: 20px; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--dourado); }
+        nav .logo { color: var(--dourado); font-weight: bold; font-size: 1.5rem; letter-spacing: 1px; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; text-transform: uppercase; }
+
+        /* Hero Section */
+        header { height: 80vh; background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px; margin-top: 60px; }
+        header h1 { font-size: 3rem; color: var(--dourado); margin-bottom: 10px; }
+        header p { font-size: 1.2rem; max-width: 700px; }
+
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        h2 { text-align: center; color: var(--azul-escuro); margin-bottom: 40px; font-size: 2rem; position: relative; }
+        h2::after { content: ''; width: 50px; height: 3px; background: var(--dourado); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+        /* Serviços */
+        .servicos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .servico-card { background: white; padding: 30px; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; text-align: center; border-top: 5px solid var(--azul-escuro); }
+        .servico-card:hover { transform: translateY(-10px); border-top-color: var(--dourado); }
+        .servico-card i { font-size: 2.5rem; color: var(--dourado); margin-bottom: 20px; }
+
+        /* Biografias */
+        .bio-section { background: var(--azul-escuro); color: white; }
+        .bio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .bio-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 10px; border: 1px solid var(--dourado); }
+        .bio-card h3 { color: var(--dourado); margin-bottom: 15px; }
+
+        /* Formulário */
+        .contato-area { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .btn-enviar { background: var(--azul-escuro); color: var(--dourado); border: none; padding: 15px 30px; cursor: pointer; font-weight: bold; width: 100%; border-radius: 5px; transition: 0.3s; }
+        .btn-enviar:hover { background: #1a2a44; color: white; }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+
+        footer { background: #050c16; color: #888; padding: 40px 20px; text-align: center; }
+        footer b { color: var(--dourado); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">CONTAGE</div>
+    <div>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Equipe</a>
+        <a href="#contato">Contato</a>
+    </div>
+</nav>
+
+<header id="inicio">
+    <h1>CONTAGE CONTABILIDADE</h1>
+    <p>Excelência em Auditoria, Consultoria Tributária e Apoio Administrativo para o seu negócio.</p>
+</header>
+
+<section id="servicos" class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos-grid">
+        <div class="servico-card">
+            <i class="fas fa-calculator"></i>
+            <h3>Consultoria Contábil</h3>
+            <p>Gestão completa da contabilidade da sua empresa com precisão e clareza.</p>
+        </div>
+        <div class="servico-card">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h3>Auditoria Tributária</h3>
+            <p>Análise profunda para garantir que sua empresa esteja em dia e economizando impostos.</p>
+        </div>
+        <div class="servico-card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Apoio Administrativo</h3>
+            <p>Serviços combinados de escritório para otimizar a rotina do seu negócio.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="bio-section">
+    <div class="container">
+        <h2>Nossa Equipe</h2>
+        <div class="bio-grid">
+            <div class="bio-card">
+                <h3>Franco Didier</h3>
+                <p>Especialista em gestão contábil e auditoria, Franco lidera a Contage com foco em resultados tributários e consultoria estratégica, garantindo segurança jurídica e financeira aos clientes.</p>
+            </div>
+            <div class="bio-card">
+                <h3>Joel Sousa</h3>
+                <p>Com vasta experiência no apoio administrativo e suporte jurídico-contábil, Joel é peça fundamental na articulação de processos e no atendimento personalizado ao cliente.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="container">
+    <h2>Fale Conosco</h2>
+    <div class="contato-area">
+        <div>
+            <h3>Solicite uma Consultoria</h3>
+            <p style="margin-bottom: 20px;">Preencha os dados e entraremos em contato o mais breve possível.</p>
+            
+            <form action=https://formspree.io/f/xaqkwnnn method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+                <select name="servico">
+                    <option value="Auditoria">Auditoria Contábil</option>
+                    <option value="Consultoria">Consultoria Tributária</option>
+                    <option value="Administrativo">Apoio Administrativo</option>
+                </select>
+                <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar sua empresa?"></textarea>
+                <button type="submit" class="btn-enviar">ENVIAR SOLICITAÇÃO</button>
+            </form>
+        </div>
+        
+        <div>
+            <h3>Informações de Contato</h3>
+            <p><strong>📍 Endereço:</strong><br>Av. Jacob Almendra, 838<br>Bairro Porenquanto, Teresina - PI</p>
+            <br>
+            <p><strong>📞 Telefones:</strong><br>(86) 99971-5731<br>(86) 99516-6193</p>
+            <br>
+            <p><strong>✉️ E-mail:</strong><br>francodidierd17@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<a href="https://api.whatsapp.com/send?phone=5586995166193&text=Olá! Gostaria de uma consultoria contábil." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+    <p>&copy; 2026 <b>Contage Contabilidade</b>. Todos os direitos reservados.<br>
+    Desenvolvido com excelência para Teresina e região.</p>
+</footer>
+
+</body>
+</html>
