@@ -22,7 +22,6 @@
         section { padding: 80px 10%; }
         h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--primary); text-align: center; margin-bottom: 40px; }
 
-        /* GRID DE NOTÍCIAS/BIBLIOTECA */
         .grid-conteudo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
         .card-noticia { background: var(--accent); border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
         .card-noticia:hover { border-color: var(--primary); transform: translateY(-5px); }
@@ -32,7 +31,6 @@
         .noticia-info h3 { margin: 10px 0; color: var(--white); font-size: 1.1rem; }
         .noticia-info p { font-size: 0.85rem; color: #8892b0; }
 
-        /* PORTFÓLIO / CASES */
         .case-box { background: rgba(197, 160, 89, 0.05); border-left: 4px solid var(--primary); padding: 25px; margin-bottom: 20px; }
         .case-box h4 { color: var(--primary); margin-bottom: 5px; }
 
@@ -50,6 +48,8 @@
     <div class="nav-links">
         <a href="#biblioteca">Biblioteca</a>
         <a href="#cases">Trabalhos</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#reforma">Reforma</a>
         <a href="#contato">Contato</a>
     </div>
 </nav>
@@ -61,63 +61,157 @@
 
 <section id="biblioteca">
     <h2>Biblioteca de Conteúdo</h2>
+
     <div class="grid-conteudo">
+
         <div class="card-noticia">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=500&q=80" alt="Impostos">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=500&q=80">
             <div class="noticia-info">
                 <span class="tag">ATUALIZAÇÃO</span>
                 <h3>Mudanças no Simples Nacional 2026</h3>
                 <p>Confira os novos limites e como sua empresa pode se enquadrar para pagar menos impostos este ano.</p>
             </div>
         </div>
+
         <div class="card-noticia">
-            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=80" alt="Auditoria">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=80">
             <div class="noticia-info">
                 <span class="tag">PROCEDIMENTOS</span>
                 <h3>Como se preparar para uma Auditoria</h3>
                 <p>Um guia passo a passo dos documentos essenciais para garantir a transparência da sua gestão.</p>
             </div>
         </div>
+
         <div class="card-noticia">
-            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80" alt="Tributário">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80">
             <div class="noticia-info">
                 <span class="tag">ARTIGO</span>
                 <h3>Recuperação de Créditos Tributários</h3>
                 <p>Muitas empresas pagam impostos a mais sem saber. Saiba como reaver esses valores legalmente.</p>
             </div>
         </div>
+
     </div>
 </section>
 
 <section id="cases" style="background: #0a192f;">
     <h2>Trabalhos de Sucesso</h2>
+
     <div class="case-box">
         <h4>Reestruturação Tributária - Indústria Teresina</h4>
         <p>Redução de 15% na carga tributária anual através do reenquadramento fiscal estratégico e análise de créditos acumulados.</p>
     </div>
+
     <div class="case-box">
         <h4>Auditoria Preventiva - Grupo de Varejo</h4>
         <p>Identificação e correção de falhas em processos contábeis, evitando multas que poderiam chegar a R$ 200 mil.</p>
     </div>
+
     <div class="case-box">
         <h4>Apoio Administrativo - Startup de Tecnologia</h4>
         <p>Implantação de fluxo de caixa e gestão financeira completa, permitindo o crescimento da empresa de forma organizada.</p>
     </div>
 </section>
 
+<!-- EQUIPE -->
+
+<section id="equipe">
+    <h2>Nossa Equipe</h2>
+
+    <div class="grid-conteudo">
+
+        <div class="card-noticia">
+            <div class="noticia-info">
+                <span class="tag">DIRETORIA</span>
+                <h3>Franco Didierd</h3>
+                <p><strong>Diretor e Consultor Contábil Estratégico</strong></p>
+
+                <p>
+                    Especialista em planejamento tributário e auditoria preventiva corporativa.
+                    Com vasta experiência em reestruturação fiscal de grandes grupos de varejo
+                    e indústrias, atua diretamente no desenho de soluções de inteligência fiscal
+                    focadas na redução legal de custos tributários e conformidade regulatória.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-noticia">
+            <div class="noticia-info">
+                <span class="tag">CONSULTORIA</span>
+                <h3>Joel Sousa</h3>
+                <p><strong>Consultor e Especialista em Gestão de Negócios</strong></p>
+
+                <p>
+                    Especialista em rotinas contábeis, controladoria e apoio administrativo
+                    para startups de tecnologia e empresas em crescimento. É responsável
+                    pela implantação de ecossistemas financeiros saudáveis, fluxos de caixa
+                    inteligentes e orientação técnica rigorosa sobre as normas vigentes nacionais.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-noticia">
+            <div class="noticia-info">
+                <span class="tag">PERÍCIA CONTÁBIL</span>
+                <h3>Dra. Melkarth</h3>
+                <p><strong>Contadora Especialista em Cálculos</strong></p>
+
+                <p>
+                    Perita contábil sênior e especialista em cálculos complexos,
+                    liquidação de sentenças e análises quantitativas estruturadas.
+                    Atua com excelência no levantamento exato de créditos tributários
+                    acumulados, auditoria matemática de balanços e suporte técnico
+                    na aplicação das regras fiscais da Reforma Tributária.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- REFORMA -->
+
+<section id="reforma" style="background:#0a192f;">
+    <h2>Atualização Tributária</h2>
+
+    <div class="card-noticia" style="max-width:1000px; margin:auto;">
+         <img src="https://i.postimg.cc/VNkkcfJY/Whats-App-Image-2026-05-17-at-06-42-54.jpg" alt="Reforma Tributária" style="width:100%; height:auto; object-fit:cover;">
+
+        <div class="noticia-info">
+            <span class="tag">REFORMA TRIBUTÁRIA</span>
+
+            <h3>Nova Regra de Apuração e Vencimento de IBS e CBS</h3>
+
+            <p>
+                A nova Lei Complementar nº 214/2025 estabelece alterações importantes
+                sobre apuração mensal, vencimentos tributários, split payment
+                e procedimentos assistidos relacionados ao IBS e CBS.
+            </p>
+        </div>
+    </div>
+</section>
+
 <section id="contato">
     <h2>Dúvidas Técnicas?</h2>
+
     <div style="text-align: center; max-width: 600px; margin: auto;">
         <p>Nossa equipe está pronta para atualizar você sobre as normas vigentes. Fale com Franco Didierd ou Joel Sousa.</p>
         <a href="#contato-form" class="btn-main">FALAR COM ESPECIALISTA</a>
     </div>
+
     <br><br>
+
     <div id="contato-form" style="background: var(--accent); padding: 30px; border-radius: 15px;">
-        <form action="COLE_AQUI_SEU_LINK_DO_FORMSPREE" method="POST" style="display: flex; flex-direction: column;">
+        <form action="https://formspree.io/f/xaqkwnnn" method="POST" style="display: flex; flex-direction: column;">
             <input type="text" name="name" placeholder="Seu Nome" style="background:#020c1b; border:1px solid #233554; padding:12px; color:white; margin-bottom:10px; border-radius:5px;" required>
+
             <input type="email" name="email" placeholder="E-mail Profissional" style="background:#020c1b; border:1px solid #233554; padding:12px; color:white; margin-bottom:10px; border-radius:5px;" required>
+
             <textarea name="message" rows="4" placeholder="Qual informação você precisa hoje?" style="background:#020c1b; border:1px solid #233554; padding:12px; color:white; margin-bottom:10px; border-radius:5px;" required></textarea>
-            <button type="submit" style="background:var(--primary); border:none; padding:15px; font-weight:bold; cursor:pointer; border-radius:5px;">ENVIAR CONSULTA</button>
+
+            <button type="submit" style="background:var(--primary); border:none; padding:15px; font-weight:bold; cursor:pointer; border-radius:5px;">
+                ENVIAR CONSULTA
+            </button>
         </form>
     </div>
 </section>
