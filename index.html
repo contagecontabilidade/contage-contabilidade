@@ -152,6 +152,28 @@ font-size:0.85rem;
 color:#8892b0;
 }
 
+/* Lista estilizada para cargos políticos */
+.noticia-info ul {
+list-style: none;
+margin: 15px 0;
+padding-left: 0;
+}
+
+.noticia-info ul li {
+font-size: 0.9rem;
+color: var(--white);
+font-weight: bold;
+margin-bottom: 5px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.noticia-info ul li::before {
+content: "✓";
+color: var(--primary);
+}
+
 .case-box{
 background:rgba(197,160,89,0.05);
 border-left:4px solid var(--primary);
@@ -211,6 +233,7 @@ font-size:0.8rem;
 
 <div class="nav-links">
 <a href="#biblioteca">Biblioteca</a>
+<a href="#servicos">Serviços Especiais</a>
 <a href="#cases">Trabalhos</a>
 <a href="#equipe">Equipe</a>
 <a href="#reforma">Reforma</a>
@@ -225,137 +248,6 @@ font-size:0.8rem;
 </header>
 
 <section id="biblioteca">
-
-<!-- AVISO IMPORTANTE -->
-<section style="padding:40px 0;">
-
-<div style="
-background: rgba(197,160,89,0.08);
-border: 1px solid rgba(197,160,89,0.3);
-border-radius: 20px;
-padding: 40px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 40px;
-align-items: center;
-backdrop-filter: blur(10px);
-margin-bottom:60px;
-">
-
-<div style="flex:1; min-width:300px;">
-
-<div style="
-display:inline-flex;
-align-items:center;
-gap:10px;
-background:rgba(197,160,89,0.12);
-padding:8px 18px;
-border-radius:30px;
-margin-bottom:20px;
-border:1px solid rgba(197,160,89,0.2);
-">
-
-<div style="
-width:10px;
-height:10px;
-border-radius:50%;
-background:var(--primary);
-"></div>
-
-<span style="
-color:var(--primary);
-font-size:0.75rem;
-font-weight:bold;
-letter-spacing:1px;
-">
-COMUNICADO IMPORTANTE
-</span>
-
-</div>
-
-<h2 style="
-font-size:2.4rem;
-line-height:1.2;
-text-align:left;
-margin-bottom:20px;
-">
-
-Última semana para envio da
-<span style="color:var(--primary);">
-Declaração do Imposto de Renda
-</span>
-
-e da
-
-<span style="color:var(--primary);">
-Declaração Anual do MEI
-</span>
-
-</h2>
-
-<p style="
-color:#8892b0;
-font-size:1rem;
-max-width:800px;
-">
-
-Informamos que esta é a última semana disponível para o envio da Declaração do Imposto de Renda Pessoa Física e também da Declaração Anual do MEI (Microempreendedores Individuais). O não envio dentro do prazo pode gerar multas, pendências fiscais e restrições junto à Receita Federal.
-
-</p>
-
-</div>
-
-<div style="
-background:rgba(2,12,27,0.7);
-border:1px solid rgba(255,255,255,0.08);
-border-radius:15px;
-padding:25px;
-min-width:260px;
-">
-
-<h3 style="
-color:var(--primary);
-margin-bottom:20px;
-font-size:1.2rem;
-">
-Prazo Final
-</h3>
-
-<div style="
-margin-bottom:15px;
-background:#112240;
-padding:15px;
-border-radius:10px;
-">
-
-<small style="color:#8892b0;">Imposto de Renda PF</small>
-
-<h4 style="color:white; font-size:1.4rem;">
-29 de Maio
-</h4>
-
-</div>
-
-<div style="
-background:#112240;
-padding:15px;
-border-radius:10px;
-">
-
-<small style="color:#8892b0;">Declaração Anual MEI</small>
-
-<h4 style="color:white; font-size:1.4rem;">
-31 de Maio
-</h4>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <h2>Biblioteca de Conteúdo</h2>
 
@@ -452,9 +344,48 @@ Ler matéria completa →
 </div>
 
 </section>
+
+
+<section id="servicos" style="background: #0a192f;">
+    
+    <h2>Serviços Especiais & Eleitorais</h2>
+    
+    <div class="grid-conteudo">
+        
+        <div class="card-noticia" style="border-top: 3px solid var(--primary);">
+            <div class="noticia-info">
+                <span class="tag">CONFORMIDADE LEGAL</span>
+                <h3>Prestação de Contas de Emendas PIX</h3>
+                <p>
+                    Executamos a prestação de contas especializada de recursos vinculados a <strong>Emendas PIX</strong>, atuando sob o rigoroso cumprimento das diretrizes estabelecidas pela <strong>ADPF nº 854 do STF</strong> e em total conformidade com a <strong>Instrução Normativa nº 05/2025 do TCE-PI</strong> (Tribunal de Contas do Estado do Piauí). Garanta a correta aplicação e evite rejeições técnicas.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-noticia" style="border-top: 3px solid var(--primary);">
+            <div class="noticia-info">
+                <span class="tag">ELEIÇÕES 2026</span>
+                <h3>Assessoria Jurídico-Contábil Eleitoral</h3>
+                <p>
+                    Consultoria e assessoria especializada focada na prestação de contas junto ao <strong>TRE</strong> e <strong>TCE</strong> para candidatos que disputam o pleito eleitoral de 2026. Alinhamento técnico preciso para as candidaturas de:
+                </p>
+                <ul>
+                    <li>Deputado Estadual</li>
+                    <li>Deputado Federal</li>
+                    <li>Governador</li>
+                    <li>Senador</li>
+                </ul>
+                <p>
+                    Assegure a total regularidade de suas contas de campanha com suporte especializado de ponta a ponta.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
   
   
-  <section id="cases" style="background: #0a192f;">
+<section id="cases">
 
     <h2>Trabalhos de Sucesso</h2>
 
@@ -485,9 +416,7 @@ Ler matéria completa →
 </section>
 
 
-<!-- EQUIPE -->
-
-<section id="equipe">
+<section id="equipe" style="background: #0a192f;">
 
     <h2>Nossa Equipe</h2>
 
@@ -501,7 +430,7 @@ Ler matéria completa →
 
                 <h3>Franco Didierd</h3>
 
-                <p>
+                <p style="margin-bottom: 10px;">
                     <strong>Diretor e Consultor Contábil Estratégico</strong>
                 </p>
 
@@ -523,7 +452,7 @@ Ler matéria completa →
 
                 <h3>Joel Sousa</h3>
 
-                <p>
+                <p style="margin-bottom: 10px;">
                     <strong>Consultor e Especialista em Gestão de Negócios</strong>
                 </p>
 
@@ -545,7 +474,7 @@ Ler matéria completa →
 
                 <h3>Dra. Melkarth</h3>
 
-                <p>
+                <p style="margin-bottom: 10px;">
                     <strong>Contadora Especialista em Cálculos</strong>
                 </p>
 
@@ -564,9 +493,7 @@ Ler matéria completa →
 </section>
 
 
-<!-- REFORMA -->
-
-<section id="reforma" style="background:#0a192f;">
+<section id="reforma">
 
     <h2>Atualização Tributária</h2>
 
@@ -598,9 +525,7 @@ Ler matéria completa →
 </section>
 
 
-<!-- CONTATO -->
-
-<section id="contato">
+<section id="contato" style="background: #0a192f;">
 
     <h2>Dúvidas Técnicas?</h2>
 
@@ -608,7 +533,7 @@ Ler matéria completa →
 
         <p>
             Nossa equipe está pronta para atualizar você sobre as normas vigentes.
-            Fale com Franco Didierd ou Joel Sousa.
+            Fale com Franco Didierd, Joel Sousa ou Dra. Melkarth.
         </p>
 
         <a href="#contato-form" class="btn-main">
@@ -633,6 +558,8 @@ Ler matéria completa →
             display:flex;
             flex-direction:column;
         ">
+
+            <input type="hidden" name="_to" value="joel.souza.adv18@gmail.com">
 
             <input
             type="text"
@@ -685,6 +612,7 @@ Ler matéria completa →
                 font-weight:bold;
                 cursor:pointer;
                 border-radius:5px;
+                color:var(--secondary);
             ">
 
                 ENVIAR CONSULTA
@@ -698,7 +626,7 @@ Ler matéria completa →
 </section>
 
 
-<a href="https://api.whatsapp.com/send?phone=5586995166192&text=Olá! Gostaria de informações sobre atualizações contábeis."
+<a href="https://api.whatsapp.com/send?phone=5586995166192&text=Olá! Gostaria de informações sobre atualizações contábeis e assessoria."
 class="whatsapp-btn"
 target="_blank">
 
@@ -714,7 +642,7 @@ target="_blank">
     </p>
 
     <p>
-        Av. Jacob Almendra, 838 | Franco Didierd & Joel Sousa
+        Av. Jacob Almendra, 838 | Franco Didierd, Joel Sousa & Dra. Melkarth
     </p>
 
 </footer>
